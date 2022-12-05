@@ -6,21 +6,21 @@ public class Task2 {
         LinkedList<String> llist = new LinkedList<>(Arrays.asList(new String[]{"one", "two", "three"}));
         System.out.println(llist);
 
-        enque(llist, "four");
+        enqueue(llist, "four");
         System.out.println(llist);
 
-        System.out.print(deque(llist) + " ");
+        System.out.print(dequeue(llist) + " ");
         System.out.println(llist);
 
         System.out.print(first(llist) + " ");
         System.out.println(llist);
     }
 
-    static <T> void enque(LinkedList<T> llist, T element) {
+    static <T> void enqueue(LinkedList<T> llist, T element) {
         llist.addLast(element);
     }
 
-    static <T> T deque(LinkedList<T> llist) {
+    static <T> T dequeue(LinkedList<T> llist) {
         return llist.removeFirst();
     }
 
