@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.HashSet;
 
+// задача решена для шахматной доски с клетками, пронумерованными от 0 до 63, картинка в качестве примера прикреплена к д/з
+
 public class Task4 {
     public static void main(String[] args) {
         findSolutions();
