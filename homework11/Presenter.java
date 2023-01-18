@@ -19,6 +19,11 @@ public class Presenter {
         this.attendanceView = new AttendanceView();
     }
 
+    public Presenter() {
+        this.attendanceService = new AttendanceService(new TreeMap<Student, TreeMap<LocalDate, Boolean>>());
+        this.attendanceView = new AttendanceView();
+    }
+
     private TreeMap<Student, Integer> getAttendancePercentage() {
         TreeMap<Student, TreeMap<LocalDate, Boolean>> attendance = this.attendanceService.getAttendanceData();
         TreeMap<Student, Integer> result = new TreeMap<>();

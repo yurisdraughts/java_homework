@@ -3,7 +3,7 @@ import java.util.TreeMap;
 
 public class Main {
     public static void main(String[] args) {
-        Presenter pr = new Presenter(new TreeMap<Student, TreeMap<LocalDate, Boolean>>());
+        Presenter pr = new Presenter();
 
         LocalDate ld1 = LocalDate.of(2023, 1, 15);
         LocalDate ld2 = LocalDate.of(2023, 1, 16);
